@@ -1,13 +1,6 @@
 #!/usr/bin/env python
-# A python to download a song or a list of songs.
-# create by Aman Roy
-# Creation Date : 18-Feb-2016
-# Python version used : - Python 3.4.3+ (ported for python2)
-# Please use right spelling to avoid errors
-# All licence belongs to authour.
 
 # import all the library used
-
 import re, urllib, os, sys
 from bs4 import BeautifulSoup
 
@@ -51,13 +44,6 @@ def video_title(url):
         title = 'Youtube Song'
 
     return title
-
-# the intro to the script
-def intro():
-    print('''Created by Aman Roy
-    FB:- amanroy007
-    Email:- royaman8757@gmail.com
-    Modified by Mendy Mishulovin''')
 
 
 # find out what the user wants to do
@@ -137,7 +123,7 @@ def exit(code):
 def main():
     try:
         screen_clear()
-        intro()
+        print('Created by Mendy Mishulovin')
         choice = prompt()
 
         try:
